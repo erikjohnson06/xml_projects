@@ -1,0 +1,1 @@
+This repository holds XML projects. The Employee Directory is a demonstration of using XPath and XSLT 2.0 features to create a typical personal information manager. Data is stored in the XML document, is validated against the schema, is styled using XSL, and is finally output to HTML in a formatted and structured manner. 
