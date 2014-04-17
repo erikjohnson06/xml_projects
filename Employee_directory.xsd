@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Define the root element -->
+  <xs:element name="Employees" type="EmployeesType"/>
+  
+    <!-- Define the root element type -->
+    <xs:complexType name="EmployeesType">
+      <xs:sequence>
+         <xs:element minOccurs="0" maxOccurs="unbounded" name="Employee" type="EmployeeType"/>
+      </xs:sequence>
+    </xs:complexType>    
+        
+    <!-- Define the child elements of Employee. Add Username as an element -->    
+    <xs:complexType name="EmployeeType">
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="First" type="xs:token"/>
+        <xs:element minOccurs="1" maxOccurs="1" name="Last" type="xs:token"/>
+        <xs:element minOccurs="1" maxOccurs="1" name="Username" type="UsernameType"/>
+        <xs:element minOccurs="1" maxOccurs="3" name="Phone" type="PhoneType"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="Fax" type="xs:token"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="Birthdate" type="xs:date"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="HourlyRate" type="HourlyRateType"/>
+        <xs:element minOccurs="1" maxOccurs="2" name="Address" type="AddressType"/>
+        <xs:element minOccurs="1" maxOccurs="3" name="Email" type="EmailType"/>
+      </xs:sequence>
+     <!-- Allow Employee element to use any attribute -->
+     <xs:anyAttribute processContents="skip" />
+    </xs:complexType> 
+    
+  <!-- Define the Username type. Length must be 8 characters. --> 
+  <!-- A combination of numbers and lowercase letters are allowed. --> 
+  <xs:simpleType name="UsernameType">
+    <xs:restriction base="xs:token">
+      <xs:pattern value="([a-z,0-9]{8})"/>
+    </xs:restriction>
+  </xs:simpleType>
+       
+   <!-- Define the attribute to use with the "Phone" element. -->  
+   <xs:complexType name="PhoneType">
+     <xs:simpleContent>
+       <xs:extension base="xs:string">
+          <xs:attribute name="Type" type="PhoneCategory" use="required"/>
+       </xs:extension>
+     </xs:simpleContent>
+   </xs:complexType>
+   
+  <!-- Define the PhoneType attribute type. Restrict to only Home, Office and Cell -->   
+  <xs:simpleType name="PhoneCategory">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Home"/>
+      <xs:enumeration value="Office"/> 
+      <xs:enumeration value="Cell"/>
+    </xs:restriction>
+  </xs:simpleType>
+    
+ 
+  <!-- Define the range values of the HourlyRateType element -->  
+  <xs:simpleType name="HourlyRateType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="15.00"/>
+      <xs:maxInclusive value="100.00"/> 
+    </xs:restriction>
+  </xs:simpleType>
+  
+ 
+    <!-- Define the attribute to use with the "Address" element -->  
+    <xs:complexType name="AddressType">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+           <xs:attribute name="Location" type="AddressCategory" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+   
+  <!-- Define the AddressType attribute. Restrict to only Home and Office -->   
+  <xs:simpleType name="AddressCategory">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Home"/>
+      <xs:enumeration value="Office"/> 
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <!-- Define the attribute to use with the "Email" element-->  
+  <xs:complexType name="EmailType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+         <xs:attribute name="Type" type="EmailCategory" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+    
+  <!-- Define the EmailType attribute. Restrict to only Personal and Work -->   
+  <xs:simpleType name="EmailCategory">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Personal"/>
+      <xs:enumeration value="Work"/> 
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>

@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="Employee_directory.xsl" type="text/xsl"?>
+<!DOCTYPE Employees>
+
+<!-- Including the reference to the schema file in the root element -->
+<Employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Employee_directory.xsd"> 
+
+   <!-- Begin listing information for all employees -->
+   <Employee Type="Manager">
+     <First>Jimmy</First>
+     <Last>Jones</Last>
+     <Username>jonesj18</Username>
+     <Phone Type="Home">808-887-3466</Phone>
+     <Phone Type="Cell">808-887-3498</Phone>
+     <Phone Type="Office">1-800-123-4567</Phone>
+     <Fax>1-800-123-4566</Fax>
+     <Birthdate>1960-03-15</Birthdate>
+     <HourlyRate>90.85</HourlyRate>
+     <Address Location="Home">562 E Main Street</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 468</Address>
+     <Email Type="Personal">jimmyjones@hotmail.com</Email>
+     <Email Type="Work">jonesj18@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Manager">
+     <First>Stephen</First>
+     <Last>Riley</Last>
+     <Username>rileyste</Username>
+     <Phone Type="Home">808-553-9975</Phone>
+     <Phone Type="Cell">808-133-6532</Phone>
+     <Phone Type="Office">1-800-123-4587</Phone>
+     <Fax>1-800-123-4588</Fax>
+     <Birthdate>1965-01-07</Birthdate>
+     <HourlyRate>61.15</HourlyRate>
+     <Address Location="Home">1025 Holt Street</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 456</Address>
+     <Email Type="Personal">stephen.riley@gmail.com</Email>
+     <Email Type="Work">rileyste@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Manager">
+     <First>Danny</First>
+     <Last>Chesson</Last>
+     <Username>chessond</Username>
+     <Phone Type="Home">808-334-9876</Phone>
+     <Phone Type="Cell">808-334-1238</Phone>
+     <Phone Type="Office">1-800-123-4514</Phone>
+     <Fax>1-800-123-4515</Fax>
+     <Birthdate>1979-11-21</Birthdate>
+     <HourlyRate>45.11</HourlyRate>
+     <Address Location="Home">3887 Ethels Lane</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 347-B</Address>
+     <Email Type="Personal">dannyboy@hotmail.com</Email>
+     <Email Type="Work">chessond@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>Richard</First>
+     <Last>Wilson</Last>
+     <Username>rwilson2</Username>
+     <Phone Type="Home">808-511-5156</Phone>
+     <Phone Type="Cell">808-511-5667</Phone>
+     <Phone Type="Office">1-800-123-4536</Phone>
+     <Fax>1-800-123-4534</Fax>
+     <Birthdate>1972-12-14</Birthdate>
+     <HourlyRate>47.09</HourlyRate>
+     <Address Location="Home">3781 Tetrick Road</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 362-A</Address>
+     <Email Type="Personal">richie@yahoo.com</Email>
+     <Email Type="Work">rwilson2@eastcorp.com</Email>
+   </Employee>
+ 
+   <Employee Type="Regular">
+     <First>Carolyn</First>
+     <Last>Liles</Last>
+     <Username>lilesca4</Username>
+     <Phone Type="Home">808-221-8544</Phone>
+     <Phone Type="Cell">808-221-6678</Phone>
+     <Phone Type="Office">1-800-123-4519</Phone>
+     <Fax>1-800-123-4518</Fax>
+     <Birthdate>1969-08-04</Birthdate>
+     <HourlyRate>39.56</HourlyRate>
+     <Address Location="Home">501 Newton Street</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 211-B</Address>
+     <Email Type="Personal">carrieliles@hotmail.com</Email>
+     <Email Type="Work">lilesca4@eastcorp.com</Email>
+   </Employee>
+
+   <Employee Type="Regular">
+     <First>Robert</First>
+     <Last>McDonald</Last>
+     <Username>mcdonald</Username>
+     <Phone Type="Home">808-144-6556</Phone>
+     <Phone Type="Cell">808-144-7658</Phone>
+     <Phone Type="Office">1-800-123-4537</Phone>
+     <Fax>1-800-123-4538</Fax>
+     <Birthdate>1985-11-21</Birthdate>
+     <HourlyRate>37.97</HourlyRate>
+     <Address Location="Home">904 Lake Floyd Circle</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 211-C</Address>
+     <Email Type="Personal">robbie.mcdonald@gmail.com</Email>
+     <Email Type="Work">mcdonald@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>Donald</First>
+     <Last>Langenfeld</Last>
+     <Username>langenfe</Username>
+     <Phone Type="Home">808-557-2346</Phone>
+     <Phone Type="Cell">808-557-6789</Phone>
+     <Phone Type="Office">1-800-123-4598</Phone>
+     <Fax>1-800-123-4597</Fax>
+     <Birthdate>1966-07-24</Birthdate>
+     <HourlyRate>53.12</HourlyRate>
+     <Address Location="Home">3317 Red Bud Lane</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 287-A</Address>
+     <Email Type="Personal">langenfeld@hotmail.com</Email>
+     <Email Type="Work">langenfe@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>Michael</First>
+     <Last>Armstrong</Last>
+     <Username>armstron</Username>
+     <Phone Type="Home">808-887-5437</Phone>
+     <Phone Type="Cell">808-887-7737</Phone>
+     <Phone Type="Office">1-800-123-4578</Phone>
+     <Birthdate>1974-05-13</Birthdate>
+     <HourlyRate>32.11</HourlyRate>
+     <Address Location="Home">3368 Hill Croft Farm Road</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 317</Address>
+     <Email Type="Personal">thearmstrongs@hotmail.com</Email>
+     <Email Type="Work">armstron@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>Jeffrey</First>
+     <Last>Johnson</Last>
+     <Username>jjohnson</Username>
+     <Phone Type="Home">808-144-1554</Phone>
+     <Phone Type="Cell">808-144-1554</Phone>
+     <Phone Type="Office">1-800-123-4523</Phone>
+     <Birthdate>1987-03-01</Birthdate>
+     <HourlyRate>25.00</HourlyRate>
+     <Address Location="Home">2330 Stutler Lane</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 205</Address>
+     <Email Type="Personal">jeff-johnson@yahoo.com</Email>
+     <Email Type="Work">jjohnson@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>Julian</First>
+     <Last>Gibson</Last>
+     <Username>jgibson4</Username>
+     <Phone Type="Home">808-585-5332</Phone>
+     <Phone Type="Cell">808-585-5235</Phone>
+     <Phone Type="Office">1-800-123-4541</Phone>
+     <Birthdate>1982-11-19</Birthdate>
+     <HourlyRate>27.05</HourlyRate>
+     <Address Location="Home">1522 Meadowbrook Mall Road</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 219</Address>
+     <Email Type="Personal">julian@netzero.com</Email>
+     <Email Type="Work">jgibson4@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>Cameron</First>
+     <Last>Rodriguez</Last>
+     <Username>rodrigu4</Username>
+     <Phone Type="Home">808-334-7899</Phone>
+     <Phone Type="Cell">808-334-0977</Phone>
+     <Phone Type="Office">1-800-123-4567</Phone>
+     <Fax>1-800-123-4568</Fax>
+     <Birthdate>1974-02-28</Birthdate>
+     <HourlyRate>45.45</HourlyRate>
+     <Address Location="Home">2437 Wilmar Farm Road</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 316-C</Address>
+     <Email Type="Personal">sweetbabycameron@hotmail.com</Email>
+     <Email Type="Work">rodrigu4@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>Edna</First>
+     <Last>Goodrich</Last>
+     <Username>goodrich</Username>
+     <Phone Type="Home">808-755-9884</Phone>
+     <Phone Type="Cell">808-755-6533</Phone>
+     <Phone Type="Office">1-800-123-4585</Phone>
+     <Birthdate>1983-04-01</Birthdate>
+     <HourlyRate>26.50</HourlyRate>
+     <Address Location="Home">1957 Blair Court</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 278</Address>
+     <Email Type="Personal">edna.c.goodrich@gmail.com</Email>
+     <Email Type="Work">goodrich@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Temporary">
+     <First>Angelia</First>
+     <Last>Nilles</Last>
+     <Username>nillesa1</Username>
+     <Phone Type="Home">808-578-0988</Phone>
+     <Phone Type="Cell">808-578-0866</Phone>
+     <Phone Type="Office">1-800-123-4571</Phone>
+     <Birthdate>1986-01-31</Birthdate>
+     <HourlyRate>23.50</HourlyRate>
+     <Address Location="Home">3631 Griffin Street</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 249-D</Address>
+     <Email Type="Personal">angelia_nilles@yahoo.com</Email>
+     <Email Type="Work">nillesa1@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Temporary">
+     <First>Edith</First>
+     <Last>Schumacher</Last>
+     <Username>schumach</Username>
+     <Phone Type="Home">808-998-1554</Phone>
+     <Phone Type="Cell">808-998-1554</Phone>
+     <Phone Type="Office">1-800-123-4580</Phone>
+     <Fax>1-800-123-4568</Fax>
+     <Birthdate>1973-04-01</Birthdate>
+     <HourlyRate>24.35</HourlyRate>
+     <Address Location="Home">4685 Wescam Court</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 122-A</Address>
+     <Email Type="Personal">edith_schumacher@gmail.com</Email>
+     <Email Type="Work">schumach@eastcorp.com</Email>
+   </Employee>
+ 
+   <Employee Type="Regular">
+     <First>Brian</First>
+     <Last>Barry</Last>
+     <Username>barrybr1</Username>
+     <Phone Type="Home">808-446-2622</Phone>
+     <Phone Type="Cell">808-446-2627</Phone>
+     <Phone Type="Office">1-800-123-4592</Phone>
+     <Fax>1-800-123-4591</Fax>
+     <Birthdate>1984-06-23</Birthdate>
+     <HourlyRate>29.15</HourlyRate>
+     <Address Location="Home">2077 Fowler Avenue</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 105-A</Address>
+     <Email Type="Personal">bbbarry@hotmail.com</Email>
+     <Email Type="Work">barrybr1@eastcorp.com</Email>
+   </Employee>
+
+   <Employee Type="Temporary">
+     <First>Marvin</First>
+     <Last>Purvis</Last>
+     <Username>purvism2</Username>
+     <Phone Type="Home">808-998-9882</Phone>
+     <Phone Type="Cell">808-998-9883</Phone>
+     <Phone Type="Office">1-800-123-4569</Phone>
+     <Fax>1-800-123-4570</Fax>
+     <Birthdate>1981-02-14</Birthdate>
+     <HourlyRate>26.75</HourlyRate>
+     <Address Location="Home">1565 Rainy Day Drive</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 210-A</Address>
+     <Email Type="Personal">marvin.purvis@gmail.com</Email>
+     <Email Type="Work">purvism2@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>Robert</First>
+     <Last>Moore</Last>
+     <Username>robmoore</Username>
+     <Phone Type="Home">808-998-7656</Phone>
+     <Phone Type="Cell">808-998-8754</Phone>
+     <Phone Type="Office">1-800-123-4551</Phone>
+     <Fax>1-800-123-4550</Fax>
+     <Birthdate>1978-06-09</Birthdate>
+     <HourlyRate>30.15</HourlyRate>
+     <Address Location="Home">3651 Tetrick Road</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 115-C</Address>
+     <Email Type="Personal">robby.moore@hotmail.com</Email>
+     <Email Type="Work">robmoore@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Temporary">
+     <First>John</First>
+     <Last>Herman</Last>
+     <Username>hermanj3</Username>
+     <Phone Type="Home">808-446-1134</Phone>
+     <Phone Type="Cell">808-446-5876</Phone>
+     <Phone Type="Office">1-800-123-4590</Phone>
+     <Birthdate>1984-01-25</Birthdate>
+     <HourlyRate>24.45</HourlyRate>
+     <Address Location="Home">2847 Bluff Street</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 125</Address>
+     <Email Type="Personal">mrherman@gmail.com</Email>
+     <Email Type="Work">hermanj3@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>William</First>
+     <Last>Martinez</Last>
+     <Username>martinez</Username>
+     <Phone Type="Home">808-767-1543</Phone>
+     <Phone Type="Cell">808-767-1566</Phone>
+     <Phone Type="Office">1-800-123-4508</Phone>
+     <Fax>1-800-123-4507</Fax>
+     <Birthdate>1974-06-23</Birthdate>
+     <HourlyRate>35.00</HourlyRate>
+     <Address Location="Home">3094 Romines Mill Road</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 113</Address>
+     <Email Type="Personal">bill.martinez@hotmail.com</Email>
+     <Email Type="Work">martinez@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Temporary">
+     <First>Jessie</First>
+     <Last>Stewart</Last>
+     <Username>jstewart</Username>
+     <Phone Type="Home">808-446-2622</Phone>
+     <Phone Type="Cell">808-446-2627</Phone>
+     <Phone Type="Office">1-800-123-4510</Phone>
+     <Birthdate>1987-07-29</Birthdate>
+     <HourlyRate>22.10</HourlyRate>
+     <Address Location="Home">2144 Sycamore Circle</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 103-A</Address>
+     <Email Type="Personal">jessiestew@gmail.com</Email>
+     <Email Type="Work">jstewart@eastcorp.com</Email>
+   </Employee>
+   
+   <Employee Type="Regular">
+     <First>James</First>
+     <Last>Robles</Last>
+     <Username>jrobles2</Username>
+     <Phone Type="Home">808-865-8734</Phone>
+     <Phone Type="Cell">808-865-6895</Phone>
+     <Phone Type="Office">1-800-123-4503</Phone>
+     <Fax>1-800-123-4502</Fax>
+     <Birthdate>1971-09-11</Birthdate>
+     <HourlyRate>39.95</HourlyRate>
+     <Address Location="Home">2087 Hanifan Lane</Address>
+     <Address Location="Office">562 Downtown Avenue, Office 110-B</Address>
+     <Email Type="Personal">jim_robles@yahoo.com</Email>
+     <Email Type="Work">jrobles2@eastcorp.com</Email>
+   </Employee>
+   
+</Employees>
